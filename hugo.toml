@@ -1,18 +1,10 @@
 baseURL = 'https://baisecamp.com/'
 locale = 'en-us'
 title = 'Baisecamp'
-theme = 'PaperMod'
 
 [params]
   author = 'Andreas Kviby'
   description = 'AI Agents meet Basecamp - A blog about combining AI-powered development with Basecamp project management'
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  defaultTheme = 'auto'
-  disableThemeToggle = false
 
 [params.homeInfoParams]
   Title = "Baisecamp"
@@ -30,14 +22,11 @@ theme = 'PaperMod'
   name = "x"
   url = "https://x.com/andreaskviby"
 
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
-    weight = 10
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 20
+[markup]
+  [markup.highlight]
+    style = 'monokai'
+    lineNos = false
+    codeFences = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="home-hero">
+  <h1>Baisecamp</h1>
+  <p>{{ .Site.Params.homeInfoParams.Content }}</p>
+</div>
+
+<h2 style="border-left: none; padding-left: 0;">Latest Posts</h2>
+
+{{ range first 10 (where .Site.RegularPages "Section" "posts") }}
+<article class="post-entry">
+  {{ with .Params.series }}
+  <span class="series">{{ . }}</span>
+  {{ end }}
+  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <div class="post-meta">
+    <time>{{ .Date.Format "January 2, 2006" }}</time>
+    {{ if .Params.tags }}
+    <span class="tags">
+      {{ range .Params.tags }}
+      <a href="/tags/{{ . | urlize }}/" class="tag">{{ . }}</a>
+      {{ end }}
+    </span>
+    {{ end }}
+  </div>
+  {{ if .Description }}
+  <p>{{ .Description }}</p>
+  {{ else }}
+  <p>{{ .Summary | truncate 200 }}</p>
+  {{ end }}
+</article>
+{{ end }}
+{{ end }}

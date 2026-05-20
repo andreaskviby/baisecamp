@@ -1,0 +1,55 @@
+{{ define "main" }}
+<article>
+  {{ with .Params.series }}
+  <span class="series">{{ . }}</span>
+  {{ end }}
+
+  <h1 class="post-title">{{ .Title }}</h1>
+
+  <div class="post-info">
+    <time>{{ .Date.Format "January 2, 2006" }}</time>
+    <span>{{ .ReadingTime }} min read</span>
+    {{ if .Params.tags }}
+    <span class="tags">
+      {{ range .Params.tags }}
+      <a href="/tags/{{ . | urlize }}/" class="tag">{{ . }}</a>
+      {{ end }}
+    </span>
+    {{ end }}
+  </div>
+
+  <div class="content">
+    {{ .Content }}
+  </div>
+
+  <hr>
+
+  {{ $currentIndex := 0 }}
+  {{ $posts := where .Site.RegularPages "Section" "posts" }}
+  {{ range $index, $page := $posts }}
+    {{ if eq $page.RelPermalink $.RelPermalink }}
+      {{ $currentIndex = $index }}
+    {{ end }}
+  {{ end }}
+
+  <nav class="post-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
+    {{ if gt $currentIndex 0 }}
+      {{ $prev := index $posts (sub $currentIndex 1) }}
+      <a href="{{ $prev.RelPermalink }}" style="text-align: left;">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; text-transform: uppercase; color: #666;">← Previous</span><br>
+        <strong>{{ $prev.Title | truncate 40 }}</strong>
+      </a>
+    {{ else }}
+      <span></span>
+    {{ end }}
+
+    {{ if lt $currentIndex (sub (len $posts) 1) }}
+      {{ $next := index $posts (add $currentIndex 1) }}
+      <a href="{{ $next.RelPermalink }}" style="text-align: right;">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; text-transform: uppercase; color: #666;">Next →</span><br>
+        <strong>{{ $next.Title | truncate 40 }}</strong>
+      </a>
+    {{ end }}
+  </nav>
+</article>
+{{ end }}

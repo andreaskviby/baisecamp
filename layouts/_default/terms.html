@@ -1,0 +1,11 @@
+{{ define "main" }}
+<h1 class="post-title">{{ .Title }}</h1>
+
+<div class="tags-list" style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem;">
+  {{ range .Pages }}
+  <a href="{{ .RelPermalink }}" class="tag" style="font-size: 1rem; padding: 0.5em 1.2em;">
+    {{ .Title }} <span style="opacity: 0.7;">({{ len .Pages }})</span>
+  </a>
+  {{ end }}
+</div>
+{{ end }}
