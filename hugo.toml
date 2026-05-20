@@ -1,0 +1,35 @@
+baseURL = 'https://baisecamp.com/'
+locale = 'en-us'
+title = 'Baisecamp'
+theme = 'PaperMod'
+
+[params]
+  author = 'Andreas Kviby'
+  description = 'AI Agents meet Basecamp - A blog about combining AI-powered development with Basecamp project management'
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  defaultTheme = 'auto'
+  disableThemeToggle = false
+
+[params.homeInfoParams]
+  Title = "Baisecamp"
+  Content = "Where AI Agents meet Basecamp. Exploring the intersection of AI-powered development and classic project management since 2007."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/andreaskviby"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
