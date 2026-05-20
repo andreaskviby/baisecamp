@@ -22,6 +22,14 @@ theme = 'PaperMod'
   name = "github"
   url = "https://github.com/andreaskviby"
 
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/andreas-kviby-576b787b/"
+
+[[params.socialIcons]]
+  name = "x"
+  url = "https://x.com/andreaskviby"
+
 [menu]
   [[menu.main]]
     identifier = "posts"

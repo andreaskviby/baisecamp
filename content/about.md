@@ -99,9 +99,9 @@ After all these years, here's what I believe:
 
 ## Where to find me
 
-I'm not on social media much. I find it more distracting than useful.
-
-If you want to reach me, the best way is through this blog. Leave a comment if I ever add that feature, or find me through the usual channels if you know where to look.
+- [LinkedIn](https://www.linkedin.com/in/andreas-kviby-576b787b/)
+- [X / Twitter](https://x.com/andreaskviby)
+- [GitHub](https://github.com/andreaskviby)
 
 Thanks for reading. I hope you find something useful here.
 
