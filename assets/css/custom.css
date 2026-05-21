@@ -349,39 +349,22 @@ hr {
 footer {
   background: var(--ink-black);
   color: var(--paper-white);
-  padding: 0;
   margin-top: 6rem;
 }
 
-footer a {
-  color: var(--wild-yellow);
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: var(--paper-white);
-}
-
-.footer-content {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 4rem 2rem 3rem;
-}
-
-.footer-brand {
+.footer-top {
   text-align: center;
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #333;
+  padding: 4rem 2rem 3rem;
 }
 
 .footer-logo {
   font-family: 'Archivo Black', sans-serif;
-  font-size: 3.5rem;
-  color: var(--paper-white) !important;
-  text-decoration: none !important;
+  font-size: 4rem;
+  color: var(--paper-white);
+  text-decoration: none;
   letter-spacing: -3px;
-  display: inline-block;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .footer-logo span {
@@ -389,112 +372,80 @@ footer a:hover {
 }
 
 .footer-logo:hover {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 .footer-tagline {
-  font-size: 1.1rem;
-  color: #888;
-  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #777;
+  margin: 0 0 2rem 0;
   font-family: 'Libre Baskerville', serif;
 }
 
-.footer-grid {
+.footer-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 2rem;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
 }
 
-.footer-col {
-  flex: 1;
-  min-width: 200px;
-}
-
-.footer-col h4 {
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: var(--wild-yellow);
-  margin-bottom: 1.2rem;
-  margin-top: 0;
-}
-
-footer .footer-col ul {
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-footer .footer-col ul li {
-  padding-left: 0 !important;
-  margin-bottom: 0.7rem !important;
-  position: relative;
-}
-
-footer .footer-col ul li::before {
-  display: none !important;
-  content: none !important;
-}
-
-footer .footer-col ul li a {
+.footer-links a {
   color: #aaa;
-  font-size: 0.95rem;
   text-decoration: none;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   transition: color 0.2s;
 }
 
-footer .footer-col ul li a:hover {
+.footer-links a:hover {
   color: var(--wild-yellow);
 }
 
-footer .social-icons {
+.footer-social {
   display: flex;
-  gap: 0.8rem;
-  margin-bottom: 1rem;
-  justify-content: flex-start;
+  justify-content: center;
+  gap: 1rem;
 }
 
-footer .social-icons a {
+.footer-social a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   background: #222;
-  color: var(--paper-white) !important;
-  text-decoration: none !important;
+  color: var(--paper-white);
+  text-decoration: none;
   transition: all 0.2s;
-  border-radius: 0;
 }
 
-footer .social-icons a:hover {
+.footer-social a:hover {
   background: var(--wild-yellow);
-  color: var(--ink-black) !important;
+  color: var(--ink-black);
   transform: rotate(-3deg) scale(1.05);
-}
-
-.footer-contact {
-  color: #666;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.85rem;
-  margin-top: 0.5rem;
 }
 
 .footer-bottom {
   background: #0a0a0a;
   padding: 2rem;
   text-align: center;
-  border-top: 4px solid;
+  border-top: 6px solid;
   border-image: linear-gradient(90deg, var(--wild-yellow), var(--wild-orange), var(--wild-pink), var(--wild-purple), var(--wild-blue)) 1;
 }
 
 .footer-bottom p {
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
+  margin: 0;
+  font-size: 0.95rem;
   color: #666;
   max-width: none;
+  line-height: 1.8;
+}
+
+.footer-disclaimer {
+  margin-bottom: 1.5rem !important;
 }
 
 .footer-bottom strong {
@@ -503,34 +454,28 @@ footer .social-icons a:hover {
 }
 
 .footer-credits {
-  margin-top: 1.5rem !important;
-  line-height: 1.8;
+  margin-bottom: 1rem !important;
 }
 
 .footer-tech {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.75rem !important;
+  font-size: 0.8rem !important;
   color: #444 !important;
-  margin-top: 1.5rem !important;
+  margin-top: 1rem !important;
   letter-spacing: 1px;
 }
 
 @media (max-width: 768px) {
-  .footer-grid {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  footer .social-icons {
-    justify-content: center;
-  }
-
   .footer-logo {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
-  .footer-col {
-    min-width: 100%;
+  .footer-links {
+    gap: 1.5rem;
+  }
+
+  .footer-links a {
+    font-size: 0.8rem;
   }
 }
 
