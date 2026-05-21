@@ -6,15 +6,18 @@
 
   <h1 class="post-title">{{ .Title }}</h1>
 
-  <div class="post-info">
-    <time>{{ .Date.Format "January 2, 2006" }}</time>
-    <span>{{ .ReadingTime }} min read</span>
+  <div class="post-meta-block">
+    <div class="post-meta-line">
+      <time>{{ .Date.Format "January 2, 2006" }}</time>
+      <span class="separator">•</span>
+      <span>{{ .ReadingTime }} min read</span>
+    </div>
     {{ if .Params.tags }}
-    <span class="tags">
+    <div class="post-tags">
       {{ range .Params.tags }}
       <a href="/tags/{{ . | urlize }}/" class="tag">{{ . }}</a>
       {{ end }}
-    </span>
+    </div>
     {{ end }}
   </div>
 
@@ -32,12 +35,12 @@
     {{ end }}
   {{ end }}
 
-  <nav class="post-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
+  <nav class="post-nav">
     {{ if gt $currentIndex 0 }}
       {{ $prev := index $posts (sub $currentIndex 1) }}
-      <a href="{{ $prev.RelPermalink }}" style="text-align: left;">
-        <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; text-transform: uppercase; color: #666;">← Previous</span><br>
-        <strong>{{ $prev.Title | truncate 40 }}</strong>
+      <a href="{{ $prev.RelPermalink }}" class="post-nav-link prev">
+        <span class="post-nav-label">← Previous</span>
+        <strong>{{ $prev.Title | truncate 50 }}</strong>
       </a>
     {{ else }}
       <span></span>
@@ -45,9 +48,9 @@
 
     {{ if lt $currentIndex (sub (len $posts) 1) }}
       {{ $next := index $posts (add $currentIndex 1) }}
-      <a href="{{ $next.RelPermalink }}" style="text-align: right;">
-        <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; text-transform: uppercase; color: #666;">Next →</span><br>
-        <strong>{{ $next.Title | truncate 40 }}</strong>
+      <a href="{{ $next.RelPermalink }}" class="post-nav-link next">
+        <span class="post-nav-label">Next →</span>
+        <strong>{{ $next.Title | truncate 50 }}</strong>
       </a>
     {{ end }}
   </nav>
