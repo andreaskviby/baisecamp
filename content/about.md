@@ -103,6 +103,20 @@ After all these years, here's what I believe:
 - [X / Twitter](https://x.com/andreaskviby)
 - [GitHub](https://github.com/andreaskviby)
 
+## Want to try AI + Basecamp?
+
+If you're curious about having AI agents work in your Basecamp projects — but you're not the type who wants to build the infrastructure yourself — reach out.
+
+I run this setup for several clients already. The experience is simple: you file todos like you always do, assign them to an AI teammate, and the work gets done. No new tools to learn. No complicated onboarding. Just Basecamp, the way you already know it, with an AI workforce behind the scenes.
+
+**Get in touch:**
+
+- Email me at **andreas@stafegroup.com**
+- Connect on [LinkedIn](https://www.linkedin.com/in/andreas-kviby-576b787b/) and send a message
+- DM me on [X / Twitter](https://x.com/andreaskviby)
+
+I'm happy to do a quick demo, answer questions, or just talk shop about AI agents and project management. No sales pitch — just a conversation about whether this could work for you.
+
 Thanks for reading. I hope you find something useful here.
 
 — Andreas

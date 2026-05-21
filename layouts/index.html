@@ -4,6 +4,16 @@
   <p>{{ .Site.Params.homeInfoParams.Content }}</p>
 </div>
 
+<div class="disclaimer" style="background: #f5f0e1; padding: 1.5rem 2rem; margin-bottom: 3rem; border-left: 6px solid #8b5cf6;">
+  <p style="margin: 0; font-size: 1.1rem;">
+    <strong>Note:</strong> I don't work at Basecamp or 37signals. I'm just a developer who fell in love with their tools, books, and way of working back in 2007 — and never looked back. This blog is my personal exploration of combining AI agents with the project management tool I trust most.
+  </p>
+  <p style="margin: 0.8rem 0 0 0;">
+    <strong>Technical?</strong> Read the posts below to build your own setup.<br>
+    <strong>Curious but not technical?</strong> <a href="/about/#want-to-try-ai--basecamp">Get in touch</a> — I run this for clients and I'm happy to show you how it works.
+  </p>
+</div>
+
 <h2 style="border-left: none; padding-left: 0;">Latest Posts</h2>
 
 {{ range first 10 (where .Site.RegularPages "Section" "posts") }}
