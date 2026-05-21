@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary Meta Tags -->
-  <title>{{ if .IsHome }}{{ .Site.Title }} - AI Agents meet Basecamp{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-  <meta name="title" content="{{ if .IsHome }}{{ .Site.Title }} - AI Agents meet Basecamp{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+  <title>{{ if .IsHome }}{{ .Site.Title }} - Connect AI Agents to Basecamp for Automated Work{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="title" content="{{ if .IsHome }}{{ .Site.Title }} - Connect AI Agents to Basecamp for Automated Work{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | plainify | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
   <meta name="author" content="{{ .Site.Params.author }}">
   <meta name="robots" content="index, follow">
@@ -18,7 +18,7 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }} - AI Agents meet Basecamp{{ else }}{{ .Title }}{{ end }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }} - Connect AI Agents to Basecamp for Automated Work{{ else }}{{ .Title }}{{ end }}">
   <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | plainify | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
   <meta property="og:image" content="{{ if .Params.ogImage }}{{ .Params.ogImage | absURL }}{{ else }}{{ "images/og-default.png" | absURL }}{{ end }}">
   <meta property="og:image:width" content="1200">
@@ -35,7 +35,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="{{ .Permalink }}">
-  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }} - AI Agents meet Basecamp{{ else }}{{ .Title }}{{ end }}">
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }} - Connect AI Agents to Basecamp for Automated Work{{ else }}{{ .Title }}{{ end }}">
   <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | plainify | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
   <meta name="twitter:image" content="{{ if .Params.ogImage }}{{ .Params.ogImage | absURL }}{{ else }}{{ "images/og-default.png" | absURL }}{{ end }}">
   <meta name="twitter:creator" content="@andreaskviby">
