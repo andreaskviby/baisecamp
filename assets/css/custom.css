@@ -393,6 +393,18 @@ footer a {
   margin-bottom: 1rem;
 }
 
+/* Series label on single post - full width row */
+.series-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  color: var(--wild-purple);
+  background: #f3e8ff;
+  padding: 0.6em 1.2em;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
 /* TABLE */
 table {
   width: 100%;

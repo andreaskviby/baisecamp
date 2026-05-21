@@ -1,0 +1,30 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffe147"/>
+      <stop offset="25%" style="stop-color:#ff6b35"/>
+      <stop offset="50%" style="stop-color:#ff0066"/>
+      <stop offset="75%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#111111"/>
+
+  <!-- Rainbow bar -->
+  <rect y="0" width="1200" height="12" fill="url(#rainbow)"/>
+
+  <!-- Main text -->
+  <text x="80" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="120" font-weight="900" fill="#fffef5">BAISE</text>
+  <text x="80" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="120" font-weight="900" fill="#ffe147">CAMP</text>
+
+  <!-- Tagline -->
+  <text x="80" y="500" font-family="ui-monospace, monospace" font-size="32" fill="#888888">Where AI Agents meet Basecamp</text>
+
+  <!-- URL -->
+  <text x="80" y="570" font-family="ui-monospace, monospace" font-size="28" fill="#ffe147">baisecamp.com</text>
+
+  <!-- Emoji -->
+  <text x="1000" y="400" font-size="180">🏕️</text>
+</svg>

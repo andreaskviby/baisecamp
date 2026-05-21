@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article>
   {{ with .Params.series }}
-  <span class="series">{{ . }}</span>
+  <div class="series-label">{{ . }}</div>
   {{ end }}
 
   <h1 class="post-title">{{ .Title }}</h1>

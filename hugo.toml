@@ -1,10 +1,13 @@
 baseURL = 'https://baisecamp.com/'
 locale = 'en-us'
 title = 'Baisecamp'
+enableRobotsTXT = true
 
 [params]
   author = 'Andreas Kviby'
-  description = 'AI Agents meet Basecamp - A blog about combining AI-powered development with Basecamp project management'
+  description = 'AI Agents meet Basecamp - A blog about combining AI-powered development with Basecamp project management. Technical deep-dives for developers, plus services for businesses who want AI teammates in their projects.'
+  mainSections = ['posts']
+  images = ['images/og-default.png']
 
 [params.homeInfoParams]
   Title = "Baisecamp"
@@ -30,3 +33,19 @@ title = 'Baisecamp'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+  section = ['HTML', 'RSS']
+  taxonomy = ['HTML']
+  term = ['HTML']
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediaType = 'application/rss+xml'
+    baseName = 'feed'
