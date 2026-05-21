@@ -5,7 +5,7 @@ enableRobotsTXT = true
 
 [params]
   author = 'Andreas Kviby'
-  description = 'Learn how to connect AI agents to Basecamp for automated project work. Technical guides for developers.'
+  description = 'Learn how to connect AI agents to Basecamp for automated project work. Technical deep-dives for developers, plus services for teams who want AI teammates.'
   mainSections = ['posts']
   images = ['images/og-default.png']
 
